@@ -7,13 +7,13 @@
 
 body {
   font-family: cursive;
-  font-style: italic;
   margin: 0 auto;
+  color: #4b4b4b;
 }
 
 a {
   text-decoration: none;
-  color: gray;
+  color: #4b4b4b;
 }
 
 section {
@@ -24,7 +24,7 @@ header {
   background-image: url(../resources/images/mainbg.jpg);
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 72%);
           clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 72%);
-  height: 120vh;
+  height: 150vh;
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -88,31 +88,88 @@ header div.main-heading a {
 }
 
 section#trending {
-  height: 60vh;
+  position: relative;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 4rem;
+  color: #4b4b4b;
 }
 
 section#trending blockquote {
-  min-width: 25vw;
-  font-size: 2rem;
-  padding: 3rem 0;
+  position: absolute;
+  top: 0;
+  left: 3%;
+  width: 25vw;
+  font-size: 1.3rem;
+  padding: inherit;
+  z-index: 100;
 }
 
-section#trending img {
+section#trending blockquote h1 {
+  font-size: 5.2rem;
+  text-transform: uppercase;
+}
+
+section#trending blockquote img {
   width: 33px;
   border-radius: 40%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-section#trending footer {
-  padding: 2rem;
+section#trending blockquote footer {
+  padding: 2rem 0;
 }
 
-section#trending footer cite {
+section#trending blockquote footer cite {
   color: gray;
   font-size: 1rem;
+}
+
+section#trending div#trending-gallery {
+  position: absolute;
+  top: -30%;
+  right: 0;
+  width: 65vw;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: inherit;
+}
+
+section#trending div#trending-gallery img {
+  display: block;
+  -webkit-box-shadow: 5px 5px 10px #afafaf;
+          box-shadow: 5px 5px 10px #afafaf;
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+}
+
+section#trending div#trending-gallery img:first-of-type {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 /3;
+}
+
+section#trending div#trending-gallery a {
+  -ms-grid-column: 3;
+  grid-column: 3/3;
+  text-align: end;
+  color: #86ceeb;
+}
+
+section#trending div#trending-gallery a span {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
