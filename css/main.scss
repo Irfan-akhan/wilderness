@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: cursive;
+    font-style: italic;
+    margin: 0 auto;
+}
+
+// Generall classes
+a {
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+}
+header {
+    background-image: url(../resources/images/mainbg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & nav {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        min-height: 10vh;
+        width: 80vw;
+        justify-content: space-between;
+        padding: 0 2rem;
+        background-color: #ffffff;
+    }
+    & ul {
+        width: 50vw;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+}
