@@ -254,20 +254,45 @@ section#about div#shapes p:last-of-type {
   left: 140px;
 }
 
+section#gallery {
+  margin-top: 10rem;
+  height: 80vh;
+}
+
 section#gallery div#cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 2rem;
 }
 
 section#gallery div#cards div {
   width: 20%;
-  margin: 0 2rem;
+  margin: 0 1rem;
+  padding: 0.6rem;
+  padding-bottom: 3rem;
+  -webkit-box-shadow: 10px 10px 10px 5px #dadada;
+          box-shadow: 10px 10px 10px 5px #dadada;
+}
+
+section#gallery div#cards div:first-of-type {
+  margin-left: 0;
+}
+
+section#gallery div#cards div:last-of-type {
+  margin-right: 0;
 }
 
 section#gallery div#cards div img {
+  background-color: #ffffff;
+  cursor: pointer;
+  height: 250px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+section#gallery div#cards div h3 {
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

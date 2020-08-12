@@ -199,14 +199,33 @@ section#about {
 
 // SECTION GALLERY
 section#gallery {
+    margin-top: 10rem;
+    height: 80vh;
+
     & div#cards {
         display: flex;
+        margin-top: 2rem;
         & div {
             width: 20%;
-            margin: 0 2rem;
+            margin: 0 1rem;
+            padding: 0.6rem;
+            padding-bottom: 3rem;
+            box-shadow: 10px 10px 10px 5px $color-shadow;
+            &:first-of-type {
+                margin-left: 0;
+            }
+            &:last-of-type {
+                margin-right: 0;
+            }
             & img {
+                background-color: $white-color;
+                cursor: pointer;
+                height: 250px;
                 width: 100%;
                 object-fit: cover;
+            }
+            & h3 {
+                margin-top: 1rem;
             }
         }
     }
