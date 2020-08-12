@@ -226,7 +226,7 @@ section#about div#text-content a span {
   font-size: 1.5rem;
 }
 
-section#about div#shapes {
+section#about div#square-shapes {
   margin-left: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,14 +240,14 @@ section#about div#shapes {
   position: relative;
 }
 
-section#about div#shapes p {
+section#about div#square-shapes p {
   -webkit-box-shadow: 10px 10px 5px #dadada;
           box-shadow: 10px 10px 5px #dadada;
   padding: 3.2rem;
   border: 12px solid #dac7b9;
 }
 
-section#about div#shapes p:last-of-type {
+section#about div#square-shapes p:last-of-type {
   padding: 1.7rem;
   position: absolute;
   top: 150px;
@@ -256,7 +256,6 @@ section#about div#shapes p:last-of-type {
 
 section#gallery {
   margin-top: 10rem;
-  height: 80vh;
 }
 
 section#gallery a {
@@ -265,6 +264,37 @@ section#gallery a {
   font-size: 1.4rem;
   display: block;
   text-align: end;
+}
+
+section#gallery div#cross-shapes {
+  text-align: center;
+}
+
+section#gallery div#cross-shapes div {
+  display: inline-block;
+  margin: 2rem;
+  position: relative;
+}
+
+section#gallery div#cross-shapes span {
+  background-color: #dac7b9;
+  display: inline-block;
+  width: 50px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+section#gallery div#cross-shapes span:first-of-type {
+  -webkit-transform: rotate(33deg);
+          transform: rotate(33deg);
+}
+
+section#gallery div#cross-shapes span:last-of-type {
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+  position: absolute;
+  top: 30%;
+  left: -2%;
 }
 
 section#gallery div#cards {

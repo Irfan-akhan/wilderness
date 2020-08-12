@@ -177,7 +177,7 @@ section#about {
         }
     }
 
-    & div#shapes {
+    & div#square-shapes {
         margin-left: 4rem;
         display: flex;
         align-items: center;
@@ -200,13 +200,36 @@ section#about {
 // SECTION GALLERY
 section#gallery {
     margin-top: 10rem;
-    height: 80vh;
     & a {
         color: $color-lightblue;
         margin-top: 2rem;
         font-size: 1.4rem;
         display: block;
         text-align: end;
+    }
+    & div#cross-shapes {
+        text-align: center;
+        div {
+            display: inline-block;
+            margin: 2rem;
+            position: relative;
+        }
+        & span {
+            background-color: $color-border;
+            display: inline-block;
+            width: 50px;
+            height: 10px;
+            border-radius: 10px;
+            &:first-of-type {
+                transform: rotate(33deg);
+            }
+            &:last-of-type {
+                transform: rotate(-50deg);
+                position: absolute;
+                top: 30%;
+                left: -2%;
+            }
+        }
     }
     & div#cards {
         display: flex;
