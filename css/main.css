@@ -294,7 +294,7 @@ section#gallery div#cards div:last-of-type {
 section#gallery div#cards div img {
   background-color: #ffffff;
   cursor: pointer;
-  height: 250px;
+  height: 350px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
