@@ -116,7 +116,7 @@ section#trending {
         position: absolute;
         top: -40%;
         left: 20%;
-        width: 65vw;
+        width: 75vw;
         height: 100%;
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
@@ -144,27 +144,56 @@ section#trending {
             }
         }
     }
-    & div#circle {
-        width: 150px;
-        height: 35%;
-        position: absolute;
-        top: -20%;
-        border: 1.2rem solid #a57d60;
-        border-radius: 50%;
-    }
 }
 
 // ABOUT SECTION
 section#about {
     display: flex;
-    width: 80vw;
     margin: 0 auto;
     font-size: 1.5rem;
     font-weight: 300;
     color: $color-secondary;
+    & div#text-content {
+        width: 70%;
+        & h3 {
+            font-weight: 100;
+        }
+        & p {
+            margin: 3rem 0;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+        & a {
+            display: block;
+            text-align: end;
+            color: $color-lightblue;
+            & span {
+                font-size: 1.5rem;
+            }
+        }
+    }
     & h2 {
         text-transform: uppercase;
         font-size: 6rem;
         font-size: 900;
+    }
+    & div#shapes {
+        margin-left: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        & p {
+            box-shadow: 10px 10px 5px #dadada;
+            padding: 3.2rem;
+            border: 12px solid #c0ac9d;
+            &:last-of-type {
+                padding: 1.7rem;
+                position: absolute;
+                top: 150px;
+                left: 140px;
+            }
+        }
     }
 }
