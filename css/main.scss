@@ -19,6 +19,12 @@ a {
 section {
     padding: 0 5rem;
 }
+.heading {
+    font-size: 5.2rem;
+    text-transform: uppercase;
+}
+
+// HEADER
 header {
     background-image: url(../resources/images/mainbg.jpg);
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 75%);
@@ -92,10 +98,7 @@ section#trending {
             font-size: 700;
             text-transform: capitalize;
         }
-        & h1 {
-            font-size: 5.2rem;
-            text-transform: uppercase;
-        }
+
         & img {
             height: 60px;
             border-radius: 50%;
@@ -125,7 +128,7 @@ section#trending {
         padding: inherit;
         & img {
             display: block;
-            box-shadow: 5px 5px 10px #afafaf;
+            box-shadow: 0px 10px 10px #dadada;
             background-color: $white-color;
             height: 100%;
             width: 100%;
@@ -173,11 +176,7 @@ section#about {
             }
         }
     }
-    & h2 {
-        text-transform: uppercase;
-        font-size: 6rem;
-        font-size: 900;
-    }
+
     & div#shapes {
         margin-left: 4rem;
         display: flex;
@@ -185,14 +184,29 @@ section#about {
         justify-content: space-between;
         position: relative;
         & p {
-            box-shadow: 10px 10px 5px #dadada;
+            box-shadow: 10px 10px 5px $color-shadow;
             padding: 3.2rem;
-            border: 12px solid #c0ac9d;
+            border: 12px solid $color-border;
             &:last-of-type {
                 padding: 1.7rem;
                 position: absolute;
                 top: 150px;
                 left: 140px;
+            }
+        }
+    }
+}
+
+// SECTION GALLERY
+section#gallery {
+    & div#cards {
+        display: flex;
+        & div {
+            width: 20%;
+            margin: 0 2rem;
+            & img {
+                width: 100%;
+                object-fit: cover;
             }
         }
     }
