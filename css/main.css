@@ -259,6 +259,14 @@ section#gallery {
   height: 80vh;
 }
 
+section#gallery a {
+  color: #86ceeb;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  display: block;
+  text-align: end;
+}
+
 section#gallery div#cards {
   display: -webkit-box;
   display: -ms-flexbox;

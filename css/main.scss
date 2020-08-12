@@ -201,7 +201,13 @@ section#about {
 section#gallery {
     margin-top: 10rem;
     height: 80vh;
-
+    & a {
+        color: $color-lightblue;
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        display: block;
+        text-align: end;
+    }
     & div#cards {
         display: flex;
         margin-top: 2rem;
