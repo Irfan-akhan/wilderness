@@ -39,8 +39,10 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 7vh;
+  min-height: 10vh;
   width: 80vw;
+  position: relative;
+  top: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -90,7 +92,8 @@ header div.main-heading a {
 section#trending {
   position: relative;
   height: 80vh;
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +104,6 @@ section#trending {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  padding: 0 4rem;
   color: #4b4b4b;
 }
 
@@ -111,8 +113,12 @@ section#trending blockquote {
   top: -10%;
   left: 3%;
   font-size: 1.3rem;
-  padding: inherit;
   z-index: 100;
+}
+
+section#trending blockquote span {
+  font-size: 700;
+  text-transform: capitalize;
 }
 
 section#trending blockquote h1 {
@@ -130,7 +136,6 @@ section#trending blockquote img {
 section#trending blockquote footer {
   padding: 2rem 0;
   display: inline-block;
-  width: 100%;
 }
 
 section#trending blockquote footer cite {
@@ -143,8 +148,8 @@ section#trending blockquote footer cite {
 section#trending div#trending-gallery {
   position: absolute;
   top: -40%;
-  left: 25%;
-  width: 60vw;
+  left: 20%;
+  width: 65vw;
   height: 100%;
   display: -ms-grid;
   display: grid;
@@ -165,7 +170,7 @@ section#trending div#trending-gallery img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  padding: 10px;
+  padding: 15px;
 }
 
 section#trending div#trending-gallery img:first-of-type {
@@ -186,8 +191,8 @@ section#trending div#trending-gallery a span {
 }
 
 section#trending div#circle {
-  width: 10%;
-  height: 25%;
+  width: 150px;
+  height: 35%;
   position: absolute;
   top: -20%;
   border: 1.2rem solid #a57d60;
