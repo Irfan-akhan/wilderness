@@ -153,3 +153,18 @@ section#trending {
         border-radius: 50%;
     }
 }
+
+// ABOUT SECTION
+section#about {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $color-secondary;
+    & h2 {
+        text-transform: uppercase;
+        font-size: 6rem;
+        font-size: 900;
+    }
+}
