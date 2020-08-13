@@ -338,18 +338,15 @@ section#journel {
   padding: 6rem;
   margin: auto;
   height: 130vh;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../resources/images/image-4.jpg) bottom no-repeat;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../resources/images/image-4.jpg) bottom no-repeat;
   background-size: cover;
-  color: #ffffff;
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr 1fr;
-      grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: 'a b b' '. c .' 'd . e';
+      grid-template-areas: 'a b b' '. c .' 'd e f';
 }
 
 section#journel h1.heading {
@@ -382,14 +379,30 @@ section#journel h2 span {
   font-size: 1.1rem;
 }
 
+section#journel h2::after {
+  content: '';
+  display: block;
+  width: 70%;
+  height: 2px;
+  margin: 10px auto;
+  background-color: black;
+}
+
 section#journel blockquote {
   font-size: 1rem;
   font-weight: 100;
   text-align: start;
+  padding: 0 2rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: f;
+  margin: 0 1rem;
+  background-color: #fafafa;
+  -webkit-box-shadow: 10px 10px 10px 5px #dadada;
+          box-shadow: 10px 10px 10px 5px #dadada;
 }
 
 section#journel blockquote:first-of-type {
-  display: b;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: d;
@@ -397,7 +410,7 @@ section#journel blockquote:first-of-type {
 
 section#journel blockquote:last-of-type {
   -ms-grid-row: 3;
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
   grid-area: e;
 }
 

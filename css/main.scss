@@ -200,6 +200,7 @@ section#about {
 // SECTION GALLERY
 section#gallery {
     margin-top: 10rem;
+
     & a {
         color: $color-lightblue;
         margin-top: 2rem;
@@ -264,18 +265,15 @@ section#journel {
     padding: 6rem;
     margin: auto;
     height: 130vh;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../resources/images/image-4.jpg) bottom no-repeat;
     background-size: cover;
-    color: $white-color;
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
         'a b b'
         '. c .'
-        'd . e';
+        'd e f';
 
     & h1.heading {
         grid-area: a;
@@ -297,13 +295,25 @@ section#journel {
             font-weight: 100;
             font-size: 1.1rem;
         }
+        &::after {
+            content: '';
+            display: block;
+            width: 70%;
+            height: 2px;
+            margin: 10px auto;
+            background-color: black;
+        }
     }
     & blockquote {
         font-size: 1rem;
         font-weight: 100;
         text-align: start;
+        padding: 0 2rem;
+        grid-area: f;
+        margin: 0 1rem;
+        background-color: #fafafa;
+        box-shadow: 10px 10px 10px 5px $color-shadow;
         &:first-of-type {
-            display: b;
             grid-area: d;
         }
         &:last-of-type {
