@@ -338,6 +338,9 @@ section#journel {
   padding: 6rem;
   margin: auto;
   height: 130vh;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../resources/images/image-4.jpg) bottom no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../resources/images/image-4.jpg) bottom no-repeat;
+  background-size: cover;
   color: #ffffff;
   text-align: center;
   display: -ms-grid;
