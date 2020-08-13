@@ -259,3 +259,69 @@ section#gallery {
         }
     }
 }
+
+section#journel {
+    padding: 6rem;
+    margin: auto;
+    height: 130vh;
+
+    color: $white-color;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        'a b b'
+        '. c .'
+        'd . e';
+
+    & h1.heading {
+        grid-area: a;
+    }
+    & span#number {
+        grid-area: b;
+        font-size: 4rem;
+        text-align: end;
+        font-weight: 100;
+    }
+
+    & h2 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        grid-area: c;
+
+        & span {
+            display: block;
+            font-weight: 100;
+            font-size: 1.1rem;
+        }
+    }
+    & blockquote {
+        font-size: 1rem;
+        font-weight: 100;
+        text-align: start;
+        &:first-of-type {
+            display: b;
+            grid-area: d;
+        }
+        &:last-of-type {
+            grid-area: e;
+        }
+        & > * {
+            padding: 0.7rem 0;
+        }
+        & img {
+            height: 60px;
+            border-radius: 50%;
+            object-fit: contain;
+            display: inline-block;
+        }
+        & footer {
+            display: flex;
+            align-items: center;
+            & cite {
+                padding-left: 10px;
+            }
+        }
+    }
+}
