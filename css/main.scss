@@ -345,6 +345,17 @@ section#stories {
         'a b'
         'c d';
     color: #000000;
+
+    & a {
+        text-align: center;
+        display: inline-block;
+        padding: 1rem 2rem;
+        border: 2px solid #ffffff;
+        border-radius: 30px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        color: $white-color;
+    }
     & blockquote {
         & img {
             height: 60px;
@@ -402,18 +413,63 @@ section#stories {
 
         &:last-of-type {
             grid-area: d;
-            background: linear-gradient(to right, #ffffff4d),
+            background: linear-gradient(to right, #00000060, #00000060),
                 url(../resources/images/stories-1.jpg) center no-repeat;
             background-size: cover;
+            text-align: center;
+            & h2.heading {
+                font-size: 3rem;
+                font-weight: 300;
+                & span {
+                    font-size: 5rem;
+                    font-weight: 900;
+                }
+            }
         }
         &:first-of-type {
             grid-area: a;
-            background: linear-gradient(to right, #ffffff4d),
+            background: linear-gradient(to right, #00000060, #00000060),
                 url(../resources/images/stories-2.jpg) center no-repeat;
             background-size: cover;
         }
     }
     & div.cards {
         grid-area: c;
+    }
+    div#info {
+        width: 100%;
+        display: flex;
+        & a {
+            color: $color-lightblue;
+            border-color: $color-lightblue;
+        }
+        & blockquote {
+            padding: 2rem;
+            color: #80808080;
+            & h3 {
+                font-size: 1.6rem;
+                color: $color-lightblue;
+                text-transform: uppercase;
+
+                & span {
+                    font-size: 1rem;
+                    display: block;
+                    opacity: 0.5;
+                }
+            }
+            & p {
+                padding: 2rem 0;
+                position: relative;
+
+                // &::before {
+                //     content: '\00a0 ';
+                //     width: 5px;
+                //     height: 70%;
+                //     background-color: #8080805e;
+                //     display: block;
+                //     position: absolute;
+                // }
+            }
+        }
     }
 }

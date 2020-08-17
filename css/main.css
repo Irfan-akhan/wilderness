@@ -449,6 +449,17 @@ section#stories {
   color: #000000;
 }
 
+section#stories a {
+  text-align: center;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
 section#stories blockquote img {
   height: 60px;
   border-radius: 50%;
@@ -521,17 +532,28 @@ section#stories div.background:last-of-type {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: d;
-  background: -webkit-gradient(linear, left top, right top, from(#ffffff4d)), url(../resources/images/stories-1.jpg) center no-repeat;
-  background: linear-gradient(to right, #ffffff4d), url(../resources/images/stories-1.jpg) center no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(#00000060), to(#00000060)), url(../resources/images/stories-1.jpg) center no-repeat;
+  background: linear-gradient(to right, #00000060, #00000060), url(../resources/images/stories-1.jpg) center no-repeat;
   background-size: cover;
+  text-align: center;
+}
+
+section#stories div.background:last-of-type h2.heading {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+section#stories div.background:last-of-type h2.heading span {
+  font-size: 5rem;
+  font-weight: 900;
 }
 
 section#stories div.background:first-of-type {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: a;
-  background: -webkit-gradient(linear, left top, right top, from(#ffffff4d)), url(../resources/images/stories-2.jpg) center no-repeat;
-  background: linear-gradient(to right, #ffffff4d), url(../resources/images/stories-2.jpg) center no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(#00000060), to(#00000060)), url(../resources/images/stories-2.jpg) center no-repeat;
+  background: linear-gradient(to right, #00000060, #00000060), url(../resources/images/stories-2.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -539,5 +561,39 @@ section#stories div.cards {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: c;
+}
+
+section#stories div#info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section#stories div#info a {
+  color: #86ceeb;
+  border-color: #86ceeb;
+}
+
+section#stories div#info blockquote {
+  padding: 2rem;
+  color: #80808080;
+}
+
+section#stories div#info blockquote h3 {
+  font-size: 1.6rem;
+  color: #86ceeb;
+  text-transform: uppercase;
+}
+
+section#stories div#info blockquote h3 span {
+  font-size: 1rem;
+  display: block;
+  opacity: 0.5;
+}
+
+section#stories div#info blockquote p {
+  padding: 2rem 0;
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */
