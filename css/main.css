@@ -478,9 +478,14 @@ section#stories div.cards-list div.cards {
           justify-content: space-between;
 }
 
+section#stories div.cards-list div.cards blockquote {
+  width: 30%;
+}
+
 section#stories div.cards-list div.cards .tag {
   color: rgba(128, 128, 128, 0.5);
   padding-bottom: 1.3rem;
+  text-transform: capitalize;
 }
 
 section#stories div.cards-list div.cards blockquote {
@@ -503,13 +508,12 @@ section#stories div.cards-list div.cards blockquote cite {
 }
 
 section#stories div.background {
-  height: 45vh;
   color: #ffffff;
 }
 
 section#stories div.background h2.heading {
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   padding: 2rem;
 }
 
@@ -517,8 +521,8 @@ section#stories div.background:last-of-type {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: d;
-  background: -webkit-gradient(linear, left top, right top, from(#ffffff2d)), url(../resources/images/stories-1.jpg) center no-repeat;
-  background: linear-gradient(to right, #ffffff2d), url(../resources/images/stories-1.jpg) center no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff4d)), url(../resources/images/stories-1.jpg) center no-repeat;
+  background: linear-gradient(to right, #ffffff4d), url(../resources/images/stories-1.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -526,8 +530,8 @@ section#stories div.background:first-of-type {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: a;
-  background: -webkit-gradient(linear, left top, right top, from(#ffffff2d)), url(../resources/images/stories-2.jpg) center no-repeat;
-  background: linear-gradient(to right, #ffffff2d), url(../resources/images/stories-2.jpg) center no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff4d)), url(../resources/images/stories-2.jpg) center no-repeat;
+  background: linear-gradient(to right, #ffffff4d), url(../resources/images/stories-2.jpg) center no-repeat;
   background-size: cover;
 }
 

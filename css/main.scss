@@ -365,9 +365,13 @@ section#stories {
         & div.cards {
             display: flex;
             justify-content: space-between;
+            & blockquote {
+                width: 30%;
+            }
             & .tag {
                 color: rgba(128, 128, 128, 0.5);
                 padding-bottom: 1.3rem;
+                text-transform: capitalize;
             }
 
             & blockquote {
@@ -389,22 +393,22 @@ section#stories {
         }
     }
     & div.background {
-        height: 45vh;
         color: $white-color;
         & h2.heading {
             font-weight: 300;
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             padding: 2rem;
         }
+
         &:last-of-type {
             grid-area: d;
-            background: linear-gradient(to right, #ffffff2d),
+            background: linear-gradient(to right, #ffffff4d),
                 url(../resources/images/stories-1.jpg) center no-repeat;
             background-size: cover;
         }
         &:first-of-type {
             grid-area: a;
-            background: linear-gradient(to right, #ffffff2d),
+            background: linear-gradient(to right, #ffffff4d),
                 url(../resources/images/stories-2.jpg) center no-repeat;
             background-size: cover;
         }
