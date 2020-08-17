@@ -337,3 +337,25 @@ section#journel {
         }
     }
 }
+section#stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    & div.background {
+        height: 45vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        & h2.heading {
+            color: $white-color;
+            font-weight: 100;
+            font-size: 1.6rem;
+        }
+        &:last-of-type {
+            background: url(../resources/images/stories-1.jpg);
+        }
+        &:first-of-type {
+            background: url(../resources/images/stories-2.jpg);
+        }
+    }
+}

@@ -438,4 +438,33 @@ section#journel blockquote footer {
 section#journel blockquote footer cite {
   padding-left: 10px;
 }
+
+section#stories {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+section#stories div.background {
+  height: 45vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section#stories div.background h2.heading {
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 1.6rem;
+}
+
+section#stories div.background:last-of-type {
+  background: url(../resources/images/stories-1.jpg);
+}
+
+section#stories div.background:first-of-type {
+  background: url(../resources/images/stories-2.jpg);
+}
 /*# sourceMappingURL=main.css.map */
