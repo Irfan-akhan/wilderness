@@ -341,21 +341,75 @@ section#stories {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        'a b'
+        'c d';
+    color: #000000;
+    & blockquote {
+        & img {
+            height: 60px;
+            border-radius: 50%;
+            object-fit: contain;
+            display: inline-block;
+        }
+    }
+    & div.cards-list {
+        padding: 1rem;
+        & h2 {
+            text-align: center;
+            padding: 2rem;
+            letter-spacing: 10px;
+            color: $color-lightblue;
+            text-transform: uppercase;
+        }
+        & div.cards {
+            display: flex;
+            justify-content: space-between;
+            & .tag {
+                color: rgba(128, 128, 128, 0.5);
+                padding-bottom: 1.3rem;
+            }
 
+            & blockquote {
+                border: 1px solid #dadada;
+                border-radius: 10px;
+                padding: 1rem;
+                text-align: center;
+                font-size: 1rem;
+                & a {
+                    display: block;
+                    text-align: right;
+                    color: $color-lightblue;
+                    font-size: 2rem;
+                }
+                & cite {
+                    color: rgba(128, 128, 128, 0.5);
+                }
+            }
+        }
+    }
     & div.background {
         height: 45vh;
-        background-position: center;
-        background-repeat: no-repeat;
+        color: $white-color;
         & h2.heading {
-            color: $white-color;
-            font-weight: 100;
-            font-size: 1.6rem;
+            font-weight: 300;
+            font-size: 1.1rem;
+            padding: 2rem;
         }
         &:last-of-type {
-            background: url(../resources/images/stories-1.jpg);
+            grid-area: d;
+            background: linear-gradient(to right, #ffffff2d),
+                url(../resources/images/stories-1.jpg) center no-repeat;
+            background-size: cover;
         }
         &:first-of-type {
-            background: url(../resources/images/stories-2.jpg);
+            grid-area: a;
+            background: linear-gradient(to right, #ffffff2d),
+                url(../resources/images/stories-2.jpg) center no-repeat;
+            background-size: cover;
         }
+    }
+    & div.cards {
+        grid-area: c;
     }
 }

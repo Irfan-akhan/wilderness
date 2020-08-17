@@ -358,7 +358,6 @@ section#journel h1.heading {
 section#journel span#number {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-area: b;
   font-size: 4rem;
   text-align: end;
@@ -369,7 +368,7 @@ section#journel h2 {
   text-transform: uppercase;
   font-size: 3rem;
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: c;
 }
 
@@ -403,8 +402,8 @@ section#journel blockquote {
 }
 
 section#journel blockquote:first-of-type {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: d;
 }
 
@@ -446,25 +445,95 @@ section#stories {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+      grid-template-areas: 'a b' 'c d';
+  color: #000000;
+}
+
+section#stories blockquote img {
+  height: 60px;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: inline-block;
+}
+
+section#stories div.cards-list {
+  padding: 1rem;
+}
+
+section#stories div.cards-list h2 {
+  text-align: center;
+  padding: 2rem;
+  letter-spacing: 10px;
+  color: #86ceeb;
+  text-transform: uppercase;
+}
+
+section#stories div.cards-list div.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#stories div.cards-list div.cards .tag {
+  color: rgba(128, 128, 128, 0.5);
+  padding-bottom: 1.3rem;
+}
+
+section#stories div.cards-list div.cards blockquote {
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+section#stories div.cards-list div.cards blockquote a {
+  display: block;
+  text-align: right;
+  color: #86ceeb;
+  font-size: 2rem;
+}
+
+section#stories div.cards-list div.cards blockquote cite {
+  color: rgba(128, 128, 128, 0.5);
 }
 
 section#stories div.background {
   height: 45vh;
-  background-position: center;
-  background-repeat: no-repeat;
+  color: #ffffff;
 }
 
 section#stories div.background h2.heading {
-  color: #ffffff;
-  font-weight: 100;
-  font-size: 1.6rem;
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding: 2rem;
 }
 
 section#stories div.background:last-of-type {
-  background: url(../resources/images/stories-1.jpg);
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: d;
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff2d)), url(../resources/images/stories-1.jpg) center no-repeat;
+  background: linear-gradient(to right, #ffffff2d), url(../resources/images/stories-1.jpg) center no-repeat;
+  background-size: cover;
 }
 
 section#stories div.background:first-of-type {
-  background: url(../resources/images/stories-2.jpg);
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff2d)), url(../resources/images/stories-2.jpg) center no-repeat;
+  background: linear-gradient(to right, #ffffff2d), url(../resources/images/stories-2.jpg) center no-repeat;
+  background-size: cover;
+}
+
+section#stories div.cards {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: c;
 }
 /*# sourceMappingURL=main.css.map */
