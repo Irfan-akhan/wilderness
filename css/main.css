@@ -596,4 +596,12 @@ section#stories div#info blockquote p {
   padding: 2rem 0;
   position: relative;
 }
+
+footer#end {
+  font-size: 2rem;
+  text-align: center;
+  background-color: black;
+  padding: 4rem;
+  color: #ffffff;
+}
 /*# sourceMappingURL=main.css.map */
