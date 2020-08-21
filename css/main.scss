@@ -495,6 +495,49 @@ section#stories {
         }
     }
 }
+
+// CONTACT SECTION
+section#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+        'a . c'
+        'd e f';
+    & h2.heading {
+        grid-area: a;
+    }
+    & div.shape {
+        grid-area: c;
+    }
+    & div.info {
+        grid-area: d;
+    }
+    & div.img-bg {
+        grid-area: e;
+    }
+    & form {
+        grid-area: f;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & input,
+        textarea,
+        button {
+            width: 80%;
+            margin-bottom: 1rem;
+            padding: 1rem 0.4rem;
+            // background-color: $color-lightblue;
+            border: 1px solid rgba(128, 128, 128, 0.438);
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            outline: none;
+        }
+    }
+}
+
+// footer
 footer#end {
     font-size: 2rem;
     text-align: center;

@@ -367,8 +367,8 @@ section#journel span#number {
 section#journel h2 {
   text-transform: uppercase;
   font-size: 3rem;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: c;
 }
 
@@ -392,7 +392,7 @@ section#journel blockquote {
   font-weight: 100;
   text-align: start;
   padding: 0 2rem;
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: f;
   margin: 0 1rem;
@@ -403,12 +403,12 @@ section#journel blockquote {
 
 section#journel blockquote:first-of-type {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: d;
 }
 
 section#journel blockquote:last-of-type {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: e;
 }
@@ -546,7 +546,7 @@ section#stories div.background h2.heading i {
 
 section#stories div.background:last-of-type {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: d;
   background: -webkit-gradient(linear, left top, right top, from(#00000060), to(#00000060)), url(../resources/images/stories-1.jpg) center no-repeat;
   background: linear-gradient(to right, #00000060, #00000060), url(../resources/images/stories-1.jpg) center no-repeat;
@@ -595,8 +595,8 @@ section#stories div.background:first-of-type {
 }
 
 section#stories div.cards {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: c;
 }
 
@@ -632,6 +632,71 @@ section#stories div#info blockquote h3 span {
 section#stories div#info blockquote p {
   padding: 2rem 0;
   position: relative;
+}
+
+section#contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 3fr;
+      grid-template-rows: 1fr 3fr;
+      grid-template-areas: 'a . c' 'd e f';
+}
+
+section#contact h2.heading {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+}
+
+section#contact div.shape {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: c;
+}
+
+section#contact div.info {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: d;
+}
+
+section#contact div.img-bg {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: e;
+}
+
+section#contact form {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#contact form input,
+section#contact form textarea,
+section#contact form button {
+  width: 80%;
+  margin-bottom: 1rem;
+  padding: 1rem 0.4rem;
+  border: 1px solid rgba(128, 128, 128, 0.438);
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: none;
 }
 
 footer#end {
