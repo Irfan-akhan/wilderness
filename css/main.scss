@@ -495,12 +495,16 @@ section#stories {
         }
     }
 }
-
+section {
+    padding-top: 10rem;
+}
 // CONTACT SECTION
 section#contact {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr 1.5fr;
     grid-template-rows: 1fr 3fr;
+    grid-row-gap: 50px;
+
     grid-template-areas:
         'a . c'
         'd e f';
@@ -508,13 +512,56 @@ section#contact {
         grid-area: a;
     }
     & div.shape {
+        margin-left: 100px;
         grid-area: c;
+        box-shadow: 10px 10px 5px $color-shadow;
+        width: 150px;
+        height: 150px;
+        border: 15px solid $color-border;
+        border-radius: 50%;
     }
     & div.info {
+        text-align: center;
         grid-area: d;
+
+        & h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+        & h3 {
+            font-size: 1.3rem;
+            opacity: 0.8;
+        }
+        & h3#circle {
+            display: inline-block;
+            border: 15px solid $color-border;
+            padding: 2.5rem 1rem;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            vertical-align: text-bottom;
+            color: black;
+            margin: 1.5rem 0rem;
+        }
+        & h5 {
+            font-size: 1.1rem;
+            opacity: 0.5;
+            font-weight: 100;
+            color: $color-lightblue;
+        }
+        & h4 {
+            font-size: 1.2rem;
+            font-weight: 100;
+            color: $color-lightblue;
+            &:last-of-type {
+                color: rgb(252, 114, 137);
+            }
+        }
     }
     & div.img-bg {
         grid-area: e;
+        background: url('../resources/images/image-5.jpg') center no-repeat;
+        background-size: cover;
     }
     & form {
         grid-area: f;
@@ -528,11 +575,16 @@ section#contact {
             width: 80%;
             margin-bottom: 1rem;
             padding: 1rem 0.4rem;
-            // background-color: $color-lightblue;
             border: 1px solid rgba(128, 128, 128, 0.438);
-            border-top-right-radius: 10px;
-            border-bottom-left-radius: 10px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
             outline: none;
+        }
+        & button {
+            background-color: $color-lightblue;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            color: $white-color;
         }
     }
 }
