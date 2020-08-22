@@ -14,15 +14,19 @@ body {
 a {
   text-decoration: none;
   color: #4b4b4b;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 section {
-  padding: 0 5rem;
+  padding: 5rem;
 }
 
 .heading {
   font-size: 5.2rem;
   text-transform: uppercase;
+  color: #86ceeb;
+  text-shadow: 3px 2px 3px #000000;
 }
 
 header {
@@ -96,7 +100,8 @@ header div.main-heading a {
 
 section#trending {
   position: relative;
-  height: 80vh;
+  height: 75vh;
+  padding: 0;
   width: 95%;
   margin: 0 auto;
   display: -webkit-box;
@@ -254,10 +259,6 @@ section#about div#square-shapes p:last-of-type {
   left: 140px;
 }
 
-section#gallery {
-  margin-top: 10rem;
-}
-
 section#gallery a {
   color: #86ceeb;
   margin-top: 2rem;
@@ -335,24 +336,29 @@ section#gallery div#cards div h3 {
 }
 
 section#journel {
-  padding: 6rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000088), to(#000000)), url("../resources/images/jo.jpg") bottom no-repeat;
+  background: linear-gradient(to bottom, #00000088, #000000), url("../resources/images/jo.jpg") bottom no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
   margin: auto;
   height: 130vh;
   background-size: cover;
   text-align: center;
+  color: #ffffff;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 2fr 1fr 2fr;
+      grid-template-columns: 2fr 1fr 2fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: 'a b b' '. c .' 'd e f';
+      grid-template-areas: 'a b b' '. c .' 'd . f';
 }
 
 section#journel h1.heading {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: a;
+  color: #ffffff;
 }
 
 section#journel span#number {
@@ -376,15 +382,16 @@ section#journel h2 span {
   display: block;
   font-weight: 100;
   font-size: 1.1rem;
+  opacity: 0.7;
 }
 
 section#journel h2::after {
   content: '';
   display: block;
-  width: 70%;
+  width: 50%;
   height: 2px;
   margin: 10px auto;
-  background-color: black;
+  background-color: #ffffff;
 }
 
 section#journel blockquote {
@@ -396,9 +403,8 @@ section#journel blockquote {
   -ms-grid-column: 4;
   grid-area: f;
   margin: 0 1rem;
-  background-color: #fafafa;
-  -webkit-box-shadow: 10px 10px 10px 5px #dadada;
-          box-shadow: 10px 10px 10px 5px #dadada;
+  height: 100%;
+  width: 100%;
 }
 
 section#journel blockquote:first-of-type {
@@ -409,8 +415,8 @@ section#journel blockquote:first-of-type {
 
 section#journel blockquote:last-of-type {
   -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: e;
+  -ms-grid-column: 4;
+  grid-area: f;
 }
 
 section#journel blockquote > * {
@@ -594,6 +600,10 @@ section#stories div.background:first-of-type {
   background-size: cover;
 }
 
+section#stories div.background:first-of-type h2.heading {
+  color: inherit;
+}
+
 section#stories div.cards {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
@@ -635,7 +645,6 @@ section#stories div#info blockquote p {
 }
 
 section#contact {
-  padding: 5rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1.5fr;
@@ -747,6 +756,7 @@ section#contact form button {
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   outline: none;
+  cursor: pointer;
 }
 
 section#contact form button {
