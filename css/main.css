@@ -761,12 +761,12 @@ footer#end {
   display: grid;
   -ms-grid-columns: 2fr 1fr 1fr 1fr;
       grid-template-columns: 2fr 1fr 1fr 1fr;
-  -ms-grid-rows: 2fr 1fr;
-      grid-template-rows: 2fr 1fr;
+  -ms-grid-rows: 2fr 0.5fr;
+      grid-template-rows: 2fr 0.5fr;
   row-gap: 4rem;
       grid-template-areas: 'a b c d' 'e . . f';
   background-color: #292929;
-  padding: 4rem;
+  padding: 2rem;
   color: #ffffff;
 }
 
