@@ -634,4 +634,14 @@ footer#end {
         font-size: 1rem;
         opacity: 0.7;
     }
+    & #social_links {
+        grid-area: f;
+        display: flex;
+        opacity: 0.7;
+        & img {
+            width: 50px;
+            height: 50px;
+            margin-right: 1.2rem;
+        }
+    }
 }
