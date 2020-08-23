@@ -31,8 +31,8 @@ section {
 
 header {
   background-image: url(../resources/images/mainbg.jpg);
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 75%);
-          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 75%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
   height: 150vh;
   background-position: center bottom;
   background-size: cover;
@@ -132,20 +132,10 @@ header div.main-heading a:hover {
 
 section#trending {
   position: relative;
-  height: 75vh;
+  height: 70vh;
   padding: 0;
   width: 95%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
   color: #4b4b4b;
 }
 
@@ -194,8 +184,8 @@ section#trending div#trending-gallery {
       grid-template-columns: 2fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 0.2fr;
       grid-template-rows: 1fr 1fr 0.2fr;
-  grid-gap: 10px;
-  padding: inherit;
+  grid-column-gap: 10px;
+  grid-row-gap: 40px;
 }
 
 section#trending div#trending-gallery img {
@@ -203,17 +193,24 @@ section#trending div#trending-gallery img {
   -webkit-box-shadow: 0px 10px 10px #dadada;
           box-shadow: 0px 10px 10px #dadada;
   background-color: #ffffff;
-  height: 100%;
+  height: 120%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   padding: 15px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 section#trending div#trending-gallery img:first-of-type {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 /3;
+}
+
+section#trending div#trending-gallery img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 section#trending div#trending-gallery a {
