@@ -47,6 +47,7 @@ header {
         justify-content: space-between;
         padding: 0 2rem;
         background-color: $white-color;
+        animation: bottomTransition 2s ease-in;
         & #logo {
             border-bottom: 2px solid transparent;
             &:hover {
@@ -77,6 +78,8 @@ header {
         text-align: center;
         font-weight: 200;
         font-size: 1.5rem;
+        transition: all 0.3;
+        animation: topTransition 2s ease-in-out;
         & h1 {
             font-size: 5rem;
             font-weight: 300;
@@ -674,5 +677,24 @@ footer#end {
             height: 50px;
             margin-right: 1.2rem;
         }
+    }
+}
+
+// Animations
+@keyframes bottomTransition {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+@keyframes topTransition {
+    0% {
+        opacity: 0;
+        transform: translateX(3rem);
     }
 }

@@ -57,6 +57,8 @@ header nav {
           justify-content: space-between;
   padding: 0 2rem;
   background-color: #ffffff;
+  -webkit-animation: bottomTransition 2s ease-in;
+          animation: bottomTransition 2s ease-in;
 }
 
 header nav #logo {
@@ -99,6 +101,10 @@ header div.main-heading {
   text-align: center;
   font-weight: 200;
   font-size: 1.5rem;
+  -webkit-transition: all 0.3;
+  transition: all 0.3;
+  -webkit-animation: topTransition 2s ease-in-out;
+          animation: topTransition 2s ease-in-out;
 }
 
 header div.main-heading h1 {
@@ -861,5 +867,47 @@ footer#end #social_links img {
   width: 50px;
   height: 50px;
   margin-right: 1.2rem;
+}
+
+@-webkit-keyframes bottomTransition {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+
+@keyframes bottomTransition {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+
+@-webkit-keyframes topTransition {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(3rem);
+            transform: translateX(3rem);
+  }
+}
+
+@keyframes topTransition {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(3rem);
+            transform: translateX(3rem);
+  }
 }
 /*# sourceMappingURL=main.css.map */
