@@ -336,8 +336,8 @@ section#gallery div#cards div h3 {
 }
 
 section#journel {
-  background: -webkit-gradient(linear, left top, left bottom, from(#00000088), to(#000000)), url("../resources/images/jo.jpg") bottom no-repeat;
-  background: linear-gradient(to bottom, #00000088, #000000), url("../resources/images/jo.jpg") bottom no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000088), to(#000000)), url("../resources/images/journelBG.jpg") bottom no-repeat;
+  background: linear-gradient(to bottom, #00000088, #000000), url("../resources/images/journelBG.jpg") bottom no-repeat;
   background-size: contain;
   background-attachment: fixed;
   margin: auto;
