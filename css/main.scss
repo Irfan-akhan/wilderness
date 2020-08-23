@@ -47,12 +47,26 @@ header {
         justify-content: space-between;
         padding: 0 2rem;
         background-color: $white-color;
+        & #logo {
+            border-bottom: 2px solid transparent;
+            &:hover {
+                color: black;
+                border-bottom: 2px solid black;
+            }
+        }
     }
     & ul {
         width: 50vw;
         display: flex;
         list-style: none;
         justify-content: space-between;
+        & a {
+            transition: border 0.2s;
+            &:hover {
+                color: black;
+                border-bottom: 2px solid black;
+            }
+        }
     }
     & div.main-heading {
         color: $white-color;
@@ -76,6 +90,11 @@ header {
             color: $white-color;
             font-size: 1.2rem;
             text-transform: capitalize;
+            transition: background-color 0.5s;
+            &:hover {
+                color: black;
+                background-color: $white-color;
+            }
         }
     }
 }

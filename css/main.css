@@ -59,6 +59,15 @@ header nav {
   background-color: #ffffff;
 }
 
+header nav #logo {
+  border-bottom: 2px solid transparent;
+}
+
+header nav #logo:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
 header ul {
   width: 50vw;
   display: -webkit-box;
@@ -68,6 +77,16 @@ header ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+header ul a {
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+}
+
+header ul a:hover {
+  color: black;
+  border-bottom: 2px solid black;
 }
 
 header div.main-heading {
@@ -96,6 +115,13 @@ header div.main-heading a {
   color: #ffffff;
   font-size: 1.2rem;
   text-transform: capitalize;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+header div.main-heading a:hover {
+  color: black;
+  background-color: #ffffff;
 }
 
 section#trending {
