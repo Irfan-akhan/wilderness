@@ -936,4 +936,26 @@ footer#end #social_links img:hover {
             transform: translateX(3rem);
   }
 }
+
+@media only screen and (max-width: 480px) {
+  /* For mobile phones: */
+}
+
+@media only screen and (max-width: 767px) {
+  /* For small tablets */
+  section#trending div#trending-gallery {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  /* For big tablets */
+}
+
+@media only screen and (max-width: 1200px) {
+  /* For desktops/big screens */
+}
 /*# sourceMappingURL=main.css.map */
