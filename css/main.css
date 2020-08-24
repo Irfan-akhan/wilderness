@@ -579,6 +579,10 @@ section#stories div.background h2.heading i {
   margin-right: 10px;
 }
 
+section#stories div.background h2.heading i:hover {
+  cursor: pointer;
+}
+
 section#stories div.background:last-of-type {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
@@ -620,6 +624,11 @@ section#stories div.background:last-of-type a {
   font-weight: 900;
 }
 
+section#stories div.background:last-of-type a:hover {
+  background-color: #ffffff;
+  color: #000000a4;
+}
+
 section#stories div.background:first-of-type {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -649,6 +658,11 @@ section#stories div#info {
 section#stories div#info a {
   color: #86ceeb;
   border-color: #86ceeb;
+}
+
+section#stories div#info a:hover {
+  background-color: #86ceeb;
+  color: #ffffff;
 }
 
 section#stories div#info blockquote {

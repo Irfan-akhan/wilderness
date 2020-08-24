@@ -453,6 +453,9 @@ section#stories {
                 background-position: center;
                 background-size: cover;
                 margin-right: 10px;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
 
@@ -480,6 +483,10 @@ section#stories {
             & a {
                 background-color: #ffffff15;
                 font-weight: 900;
+                &:hover {
+                    background-color: $white-color;
+                    color: #000000a4;
+                }
             }
         }
         &:first-of-type {
@@ -501,6 +508,10 @@ section#stories {
         & a {
             color: $color-lightblue;
             border-color: $color-lightblue;
+            &:hover {
+                background-color: $color-lightblue;
+                color: $white-color;
+            }
         }
         & blockquote {
             padding: 2rem;
