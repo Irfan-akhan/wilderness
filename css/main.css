@@ -968,6 +968,20 @@ footer#end #social_links img:hover {
 
 @media only screen and (max-width: 480px) {
   /* For mobile phones: */
+  section#contact h2.heading {
+    font-size: 2rem;
+  }
+  section#contact div.info h2 {
+    font-size: 2rem;
+  }
+  section#contact div.info h3 {
+    font-size: 1.6rem;
+  }
+  section#contact form input,
+  section#contact form textarea,
+  section#contact form button {
+    font-size: 1.5rem;
+  }
   footer#end {
     display: -webkit-box;
     display: -ms-flexbox;

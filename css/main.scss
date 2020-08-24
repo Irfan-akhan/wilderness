@@ -755,6 +755,32 @@ footer#end {
 
 @media only screen and (max-width: 480px) {
     /* For mobile phones: */
+
+    // SECTION CONTACT
+    section#contact {
+        & h2.heading {
+            font-size: 2rem;
+        }
+
+        & div.info {
+            & h2 {
+                font-size: 2rem;
+            }
+            & h3 {
+                font-size: 1.6rem;
+            }
+        }
+
+        & form {
+            & input,
+            textarea,
+            button {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    // FOOTER
     footer#end {
         display: flex;
         flex-direction: column;
