@@ -62,11 +62,16 @@ header nav {
 }
 
 header nav #logo {
-  border-bottom: 2px solid transparent;
+  border: 2px solid black;
+  color: black;
+  padding: 0.5rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 header nav #logo:hover {
   color: black;
+  border: 2px solid transparent;
   border-bottom: 2px solid black;
 }
 

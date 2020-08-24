@@ -49,9 +49,13 @@ header {
         background-color: $white-color;
         animation: bottomTransition 2s ease-in;
         & #logo {
-            border-bottom: 2px solid transparent;
+            border: 2px solid black;
+            color: black;
+            padding: 0.5rem;
+            transition: all 0.5s;
             &:hover {
                 color: black;
+                border: 2px solid transparent;
                 border-bottom: 2px solid black;
             }
         }
