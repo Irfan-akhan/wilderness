@@ -1047,6 +1047,29 @@ footer#end #social_links img:hover {
   header div.main-heading a {
     font-size: 1.5rem;
   }
+  section#about {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #4b4b4b;
+  }
+  section#about div#text-content {
+    width: 100%;
+  }
+  section#about div#text-content h2.heading {
+    margin-bottom: 2rem;
+    font-size: 4.5rem;
+  }
+  section#about div#text-content a {
+    text-align: start;
+    padding: 2rem 0;
+    font-size: 2.1rem;
+  }
+  section#about div#text-content a span {
+    font-size: 2rem;
+  }
+  section#about div#square-shapes {
+    display: none;
+  }
   section#gallery {
     padding: 2rem;
   }
@@ -1064,6 +1087,10 @@ footer#end #social_links img:hover {
     width: 100%;
     font-size: 2rem;
   }
+  section#gallery div#cards div:last-of-type {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   section#gallery a {
     text-align: center;
     font-size: 2.4rem;
@@ -1078,27 +1105,33 @@ footer#end #social_links img:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   section#journel h1.heading {
-    font-size: 5rem;
+    font-size: 4.5rem;
     text-align: center;
   }
   section#journel span#number {
     display: none;
   }
   section#journel h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
   }
   section#journel blockquote {
-    width: 100%;
-    font-size: 2rem;
+    width: 80%;
+    font-size: 1.8rem;
     padding: 0rem;
     text-align: center;
   }
   section#journel blockquote h3 {
     color: #86ceeb;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     margin-top: 2rem;
   }
   section#journel blockquote footer {
@@ -1257,6 +1290,16 @@ footer#end #social_links img:hover {
 
 @media only screen and (max-width: 480px) {
   /* For mobile phones: */
+  section#about {
+    padding: 2rem;
+    text-align: center;
+  }
+  section#about div#text-content p {
+    font-size: 1.7rem;
+  }
+  section#about div#text-content a {
+    text-align: center;
+  }
   section#gallery {
     padding: 2rem;
     margin: 0 auto;
