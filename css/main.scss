@@ -265,11 +265,13 @@ section#gallery {
     }
     & div#cards {
         display: flex;
+        justify-content: space-between;
+
         margin-top: 2rem;
         & div {
-            width: 20%;
-            margin: 0 1rem;
-            padding: 0.6rem;
+            box-sizing: border-box;
+            width: 18%;
+
             padding-bottom: 3rem;
             box-shadow: 10px 10px 10px 5px $color-shadow;
             &:first-of-type {
@@ -345,10 +347,10 @@ section#journel {
         }
     }
     & blockquote {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 100;
         text-align: start;
-        padding: 0 2rem;
+        padding-left: 2rem;
         grid-area: f;
         margin: 0 1rem;
         height: 100%;
@@ -735,6 +737,43 @@ footer#end {
 // MEDIA QUERIES
 @media only screen and (max-width: 1023px) {
     /* For big tablets */
+    section#gallery {
+        & h2.heading {
+            text-align: center;
+        }
+    }
+
+    section#journel {
+        padding-top: 10rem;
+        & h1.heading {
+            font-size: 4rem;
+            text-align: end;
+        }
+        & span#number {
+            font-size: 3.5rem;
+            text-align: center;
+        }
+        & h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+        & blockquote {
+            margin: 0;
+            padding: 0;
+            width: 80%;
+            & h3 {
+                color: $color-lightblue;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            & footer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
     section#stories {
         padding: 0 2rem;
         display: grid;
@@ -765,6 +804,31 @@ footer#end {
 }
 @media only screen and (max-width: 767px) {
     /* For small tablets */
+    header {
+        height: 100vh;
+        nav {
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            #logo {
+                font-size: 1.7rem;
+            }
+        }
+        & ul {
+            display: none;
+        }
+        & div.main-heading {
+            top: 45%;
+            & h1 {
+                font-size: 3rem;
+                font-weight: 300;
+            }
+            & a {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
     section#journel {
         display: flex;
         flex-direction: column;
@@ -920,6 +984,7 @@ footer#end {
 
 @media only screen and (max-width: 480px) {
     /* For mobile phones: */
+
     section#journel {
         display: flex;
         text-align: start;

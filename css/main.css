@@ -336,13 +336,16 @@ section#gallery div#cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 2rem;
 }
 
 section#gallery div#cards div {
-  width: 20%;
-  margin: 0 1rem;
-  padding: 0.6rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 18%;
   padding-bottom: 3rem;
   -webkit-box-shadow: 10px 10px 10px 5px #dadada;
           box-shadow: 10px 10px 10px 5px #dadada;
@@ -432,10 +435,10 @@ section#journel h2::after {
 }
 
 section#journel blockquote {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 100;
   text-align: start;
-  padding: 0 2rem;
+  padding-left: 2rem;
   -ms-grid-row: 2;
   -ms-grid-column: 4;
   grid-area: f;
@@ -946,6 +949,45 @@ footer#end #social_links img:hover {
 
 @media only screen and (max-width: 1023px) {
   /* For big tablets */
+  section#gallery h2.heading {
+    text-align: center;
+  }
+  section#journel {
+    padding-top: 10rem;
+  }
+  section#journel h1.heading {
+    font-size: 4rem;
+    text-align: end;
+  }
+  section#journel span#number {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  section#journel h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  section#journel blockquote {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+  }
+  section#journel blockquote h3 {
+    color: #86ceeb;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  section#journel blockquote footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   section#stories {
     padding: 0 2rem;
     display: -ms-grid;
@@ -982,6 +1024,30 @@ footer#end #social_links img:hover {
 
 @media only screen and (max-width: 767px) {
   /* For small tablets */
+  header {
+    height: 100vh;
+  }
+  header nav {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+  }
+  header nav #logo {
+    font-size: 1.7rem;
+  }
+  header ul {
+    display: none;
+  }
+  header div.main-heading {
+    top: 45%;
+  }
+  header div.main-heading h1 {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  header div.main-heading a {
+    font-size: 1.5rem;
+  }
   section#journel {
     display: -webkit-box;
     display: -ms-flexbox;
