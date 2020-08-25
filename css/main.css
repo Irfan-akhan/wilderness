@@ -1047,6 +1047,76 @@ footer#end #social_links img:hover {
   header div.main-heading a {
     font-size: 1.5rem;
   }
+  section#trending {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #4b4b4b;
+    margin: 5rem auto;
+  }
+  section#trending blockquote {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    font-size: 1.3rem;
+    color: #86ceeb;
+  }
+  section#trending blockquote span {
+    font-size: 700;
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+  section#trending div#trending-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: static;
+    top: 0%;
+    left: 0%;
+  }
+  section#trending div#trending-gallery img {
+    display: block;
+    -webkit-box-shadow: 0px 10px 10px #dadada;
+            box-shadow: 0px 10px 10px #dadada;
+    background-color: #ffffff;
+    height: 250px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 15px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  section#trending div#trending-gallery img:last-of-type {
+    display: none;
+  }
+  section#trending div#trending-gallery img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  section#trending div#trending-gallery a {
+    text-align: end;
+    color: #86ceeb;
+    font-size: 2rem;
+  }
+  section#trending div#trending-gallery a span {
+    font-size: 2rem;
+  }
   section#about {
     font-size: 2rem;
     font-weight: 300;
