@@ -374,24 +374,27 @@ section#journel {
   background: linear-gradient(to bottom, #00000088, #000000), url("../resources/images/journelBG.jpg") bottom no-repeat;
   background-size: contain;
   background-attachment: fixed;
-  margin: auto;
+  margin: 0 auto;
   height: 130vh;
+  padding: 2rem;
   background-size: cover;
   text-align: center;
   color: #ffffff;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr 2fr;
-      grid-template-columns: 2fr 1fr 2fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 2fr 1.3fr 2fr;
+      grid-template-columns: 2fr 1.3fr 2fr;
+  -ms-grid-rows: 0.5fr 0.5fr 1fr;
+      grid-template-rows: 0.5fr 0.5fr 1fr;
       grid-template-areas: 'a b b' '. c .' 'd . f';
 }
 
 section#journel h1.heading {
+  text-align: end;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: a;
+  font-size: 4rem;
   color: #ffffff;
 }
 
@@ -400,13 +403,13 @@ section#journel span#number {
   -ms-grid-column: 2;
   grid-area: b;
   font-size: 4rem;
-  text-align: end;
+  text-align: center;
   font-weight: 100;
 }
 
 section#journel h2 {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 3.3rem;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: c;
@@ -429,7 +432,7 @@ section#journel h2::after {
 }
 
 section#journel blockquote {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 100;
   text-align: start;
   padding: 0 2rem;
@@ -439,6 +442,10 @@ section#journel blockquote {
   margin: 0 1rem;
   height: 100%;
   width: 100%;
+}
+
+section#journel blockquote h3 {
+  color: #86ceeb;
 }
 
 section#journel blockquote:first-of-type {
@@ -975,7 +982,48 @@ footer#end #social_links img:hover {
 
 @media only screen and (max-width: 767px) {
   /* For small tablets */
-  /* For small tablets */
+  section#journel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  section#journel h1.heading {
+    font-size: 5rem;
+    text-align: center;
+  }
+  section#journel span#number {
+    display: none;
+  }
+  section#journel h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  section#journel blockquote {
+    font-size: 2rem;
+    padding: 0rem;
+    text-align: center;
+  }
+  section#journel blockquote h3 {
+    color: #86ceeb;
+    font-size: 2.4rem;
+    margin-top: 2rem;
+  }
+  section#journel blockquote footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   section#stories {
     width: 100vw;
     display: -webkit-box;
@@ -1121,6 +1169,36 @@ footer#end #social_links img:hover {
 
 @media only screen and (max-width: 480px) {
   /* For mobile phones: */
+  section#journel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#journel h1.heading {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+  }
+  section#journel span#number {
+    display: none;
+  }
+  section#journel h2 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 2rem 1rem;
+  }
+  section#journel blockquote {
+    font-size: 1.5rem;
+    padding: 0rem;
+  }
+  section#journel blockquote h3 {
+    color: #86ceeb;
+  }
   section#stories {
     width: 100vw;
     display: -webkit-box;
