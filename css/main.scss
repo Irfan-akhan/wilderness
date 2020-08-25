@@ -728,6 +728,34 @@ footer#end {
 // MEDIA QUERIES
 @media only screen and (max-width: 1023px) {
     /* For big tablets */
+
+    section#stories {
+        padding: 0 2rem;
+        display: grid;
+        grid-template-rows: 1fr 1.3fr 1.5fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'a a'
+            'b b'
+            'c d';
+        & div#info {
+            font-size: 1.3rem;
+            grid-area: b;
+            text-align: center;
+        }
+        & div.cards-list {
+            padding-top: 0rem;
+        }
+
+        & div.background {
+            &:first-of-type {
+                grid-area: a;
+            }
+            &:last-of-type {
+                grid-area: d;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 767px) {
     /* For small tablets */
