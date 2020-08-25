@@ -883,6 +883,52 @@ footer#end {
 
 @media only screen and (max-width: 480px) {
     /* For mobile phones: */
+    section#stories {
+        width: 100vw;
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        div#info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            & blockquote {
+                padding: 1rem;
+                text-align: center;
+                & h3 {
+                    & span {
+                        font-size: 1.3rem;
+                        opacity: 0.7;
+                    }
+                }
+                & p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        & div.cards-list {
+            & h2 {
+                letter-spacing: 5px;
+                padding: 1.5rem 0rem;
+            }
+            & div.cards {
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                & blockquote {
+                    width: 80%;
+                    margin-bottom: 1rem;
+                    padding: 0.5rem 0;
+                    font-size: 1.7rem;
+                    a {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 
     // SECTION CONTACT
     section#contact {

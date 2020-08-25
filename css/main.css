@@ -1121,6 +1121,68 @@ footer#end #social_links img:hover {
 
 @media only screen and (max-width: 480px) {
   /* For mobile phones: */
+  section#stories {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#stories div#info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#stories div#info blockquote {
+    padding: 1rem;
+    text-align: center;
+  }
+  section#stories div#info blockquote h3 span {
+    font-size: 1.3rem;
+    opacity: 0.7;
+  }
+  section#stories div#info blockquote p {
+    font-size: 1.2rem;
+  }
+  section#stories div.cards-list h2 {
+    letter-spacing: 5px;
+    padding: 1.5rem 0rem;
+  }
+  section#stories div.cards-list div.cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#stories div.cards-list div.cards blockquote {
+    width: 80%;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    font-size: 1.7rem;
+  }
+  section#stories div.cards-list div.cards blockquote a {
+    text-align: center;
+  }
   section#contact h2.heading {
     font-size: 2rem;
   }
