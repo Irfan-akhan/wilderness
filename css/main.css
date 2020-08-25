@@ -970,7 +970,6 @@ footer#end #social_links img:hover {
   section#journel blockquote {
     margin: 0;
     padding: 0;
-    width: 80%;
   }
   section#journel blockquote h3 {
     color: #86ceeb;
@@ -1048,6 +1047,28 @@ footer#end #social_links img:hover {
   header div.main-heading a {
     font-size: 1.5rem;
   }
+  section#gallery {
+    padding: 2rem;
+  }
+  section#gallery h2.heading {
+    font-size: 4rem;
+    text-align: center;
+  }
+  section#gallery div#cards {
+    display: -ms-grid;
+    display: grid;
+    text-align: center;
+  }
+  section#gallery div#cards div {
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 2rem;
+  }
+  section#gallery a {
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 2rem;
+  }
   section#journel {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1070,6 +1091,7 @@ footer#end #social_links img:hover {
     text-align: center;
   }
   section#journel blockquote {
+    width: 100%;
     font-size: 2rem;
     padding: 0rem;
     text-align: center;
@@ -1235,6 +1257,40 @@ footer#end #social_links img:hover {
 
 @media only screen and (max-width: 480px) {
   /* For mobile phones: */
+  section#gallery {
+    padding: 2rem;
+    margin: 0 auto;
+  }
+  section#gallery h2.heading {
+    font-size: 4rem;
+    text-align: center;
+  }
+  section#gallery div#cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  section#gallery div#cards div {
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 2rem;
+  }
+  section#gallery a {
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 2rem;
+  }
   section#journel {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1326,6 +1382,10 @@ footer#end #social_links img:hover {
   }
   section#stories div.cards-list div.cards blockquote a {
     text-align: center;
+  }
+  section#contact {
+    padding: 2rem;
+    margin: 0 auto;
   }
   section#contact h2.heading {
     font-size: 2rem;

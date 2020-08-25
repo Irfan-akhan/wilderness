@@ -760,7 +760,6 @@ footer#end {
         & blockquote {
             margin: 0;
             padding: 0;
-            width: 80%;
             & h3 {
                 color: $color-lightblue;
                 font-size: 2rem;
@@ -828,7 +827,28 @@ footer#end {
             }
         }
     }
+    section#gallery {
+        padding: 2rem;
 
+        & h2.heading {
+            font-size: 4rem;
+            text-align: center;
+        }
+        div#cards {
+            display: grid;
+            text-align: center;
+            & div {
+                margin-top: 2rem;
+                width: 100%;
+                font-size: 2rem;
+            }
+        }
+        & a {
+            text-align: center;
+            font-size: 2.4rem;
+            padding: 2rem;
+        }
+    }
     section#journel {
         display: flex;
         flex-direction: column;
@@ -845,6 +865,7 @@ footer#end {
             text-align: center;
         }
         & blockquote {
+            width: 100%;
             & h3 {
                 color: $color-lightblue;
                 font-size: 2.4rem;
@@ -984,7 +1005,31 @@ footer#end {
 
 @media only screen and (max-width: 480px) {
     /* For mobile phones: */
-
+    section#gallery {
+        padding: 2rem;
+        margin: 0 auto;
+        & h2.heading {
+            font-size: 4rem;
+            text-align: center;
+        }
+        div#cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            & div {
+                margin-top: 2rem;
+                width: 100%;
+                font-size: 2rem;
+            }
+        }
+        & a {
+            text-align: center;
+            font-size: 2.4rem;
+            padding: 2rem;
+        }
+    }
     section#journel {
         display: flex;
         text-align: start;
@@ -1059,6 +1104,8 @@ footer#end {
 
     // SECTION CONTACT
     section#contact {
+        padding: 2rem;
+        margin: 0 auto;
         & h2.heading {
             font-size: 2rem;
         }
