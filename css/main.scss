@@ -728,7 +728,6 @@ footer#end {
 // MEDIA QUERIES
 @media only screen and (max-width: 1023px) {
     /* For big tablets */
-
     section#stories {
         padding: 0 2rem;
         display: grid;
@@ -759,6 +758,55 @@ footer#end {
 }
 @media only screen and (max-width: 767px) {
     /* For small tablets */
+    /* For small tablets */
+    section#stories {
+        width: 100vw;
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        div#info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            & blockquote {
+                text-align: center;
+                margin-bottom: 2rem;
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    background-color: gray;
+                    width: 50%;
+                    height: 1px;
+                    margin-top: 3rem;
+                }
+                & p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        & div.background {
+            &:first-of-type {
+                height: 20vh;
+                & h2.heading {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            &:last-of-type {
+                height: 30vh;
+                & h2 {
+                    & span {
+                        font-size: 3rem;
+                    }
+                }
+                & a {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
 
     // SECTION CONTACT
     section#contact {

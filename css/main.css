@@ -975,6 +975,68 @@ footer#end #social_links img:hover {
 
 @media only screen and (max-width: 767px) {
   /* For small tablets */
+  /* For small tablets */
+  section#stories {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#stories div#info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#stories div#info blockquote {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  section#stories div#info blockquote::after {
+    content: '';
+    display: inline-block;
+    background-color: gray;
+    width: 50%;
+    height: 1px;
+    margin-top: 3rem;
+  }
+  section#stories div#info blockquote p {
+    font-size: 1.5rem;
+  }
+  section#stories div.background:first-of-type {
+    height: 20vh;
+  }
+  section#stories div.background:first-of-type h2.heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section#stories div.background:last-of-type {
+    height: 30vh;
+  }
+  section#stories div.background:last-of-type h2 span {
+    font-size: 3rem;
+  }
+  section#stories div.background:last-of-type a {
+    font-size: 1.1rem;
+  }
   section#contact {
     display: -webkit-box;
     display: -ms-flexbox;
