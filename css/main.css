@@ -163,11 +163,20 @@ section#trending blockquote img {
   border-radius: 50%;
   -o-object-fit: contain;
      object-fit: contain;
+  margin-right: 10px;
 }
 
 section#trending blockquote footer {
   padding: 2rem 0;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section#trending blockquote footer cite {
@@ -705,8 +714,8 @@ section#stories div#info blockquote p {
 section#contact {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1.5fr;
-      grid-template-columns: 1fr 1fr 1.5fr;
+  -ms-grid-columns: 0.7fr 1.3fr 1.5fr;
+      grid-template-columns: 0.7fr 1.3fr 1.5fr;
   -ms-grid-rows: 1fr 3fr;
       grid-template-rows: 1fr 3fr;
   grid-row-gap: 50px;
@@ -1095,25 +1104,26 @@ footer#end #social_links img:hover {
   section#trending blockquote {
     position: absolute;
     top: -20%;
-    width: 100%;
+    margin: 0 auto;
     margin-bottom: 2rem;
     text-align: center;
   }
+  section#trending blockquote h1.heading {
+    font-size: 3em;
+  }
   section#trending blockquote span {
-    color: black;
+    color: #86ceeb;
     font-size: 1.9rem;
+    font-weight: 900;
+  }
+  section#trending blockquote footer {
+    padding: 0;
   }
   section#trending blockquote footer cite {
     font-size: 1.5rem;
   }
   section#trending div#trending-gallery {
-    position: static;
     margin: 3rem auto;
-    width: 100%;
-  }
-  section#trending div#trending-gallery a {
-    margin-top: 2rem;
-    font-size: 2rem;
   }
   section#about {
     font-size: 2rem;
@@ -1165,45 +1175,38 @@ footer#end #social_links img:hover {
     padding: 2rem;
   }
   section#journel {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block;
+    padding: 1rem;
     text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   section#journel h1.heading {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     text-align: center;
+    margin-bottom: 1rem;
   }
   section#journel span#number {
     display: none;
   }
   section#journel h2 {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     text-align: center;
   }
   section#journel blockquote {
     width: 80%;
     font-size: 1.3rem;
     padding: 0rem;
+    display: inline-block;
+    height: initial;
     text-align: center;
   }
   section#journel blockquote h3 {
     color: #86ceeb;
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-top: 2rem;
   }
   section#journel blockquote p {
-    font-size: 1.6rem;
+    text-align: center;
+    font-size: 1.1rem;
   }
   section#journel blockquote footer {
     display: -webkit-box;
@@ -1361,15 +1364,50 @@ footer#end #social_links img:hover {
 
 @media only screen and (max-width: 480px) {
   /* For mobile phones: */
+  header nav#navbar a#logo {
+    font-size: 1.3rem;
+  }
   section#about {
     padding: 2rem;
     text-align: center;
   }
   section#about div#text-content p {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
   section#about div#text-content a {
     text-align: center;
+    font-size: 1.5rem;
+  }
+  section#trending {
+    overflow: scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#trending blockquote {
+    position: static;
+    margin-bottom: 2rem;
+  }
+  section#trending blockquote h1.heading {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  section#trending blockquote footer {
+    padding: 0;
+  }
+  section#trending blockquote footer cite {
+    font-size: 1.5rem;
+  }
+  section#trending div#trending-gallery {
+    display: inline-block;
+    text-align: center;
+  }
+  section#trending div#trending-gallery img {
+    height: 200px;
   }
   section#gallery {
     padding: 2rem;
@@ -1398,22 +1436,27 @@ footer#end #social_links img:hover {
   section#gallery div#cards div {
     margin-top: 2rem;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   section#gallery a {
     text-align: center;
-    font-size: 2.4rem;
-    padding: 2rem;
+    font-size: 1.7rem;
+    padding: 0rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  section#gallery div#cross-shapes {
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+  }
+  section#gallery div#cross-shapes div {
+    margin: 10px;
   }
   section#journel {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
   }
   section#journel h1.heading {
     font-size: 2.5rem;
@@ -1424,16 +1467,25 @@ footer#end #social_links img:hover {
     display: none;
   }
   section#journel h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-transform: capitalize;
-    padding: 2rem 1rem;
+    padding: 1rem;
   }
   section#journel blockquote {
     font-size: 1.5rem;
     padding: 0rem;
+    width: 80%;
+    display: inline-block;
+    height: initial;
   }
   section#journel blockquote h3 {
     color: #86ceeb;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  section#journel blockquote p {
+    margin: 0;
+    font-size: 1rem;
   }
   section#stories {
     width: 100vw;
@@ -1445,6 +1497,14 @@ footer#end #social_links img:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  section#stories div.background:last-of-type h2 {
+    font-size: 1rem;
+  }
+  section#stories div.background:last-of-type a {
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 0.5rem 1rem;
   }
   section#stories div#info {
     display: -webkit-box;
@@ -1492,7 +1552,7 @@ footer#end #social_links img:hover {
     width: 80%;
     margin-bottom: 1rem;
     padding: 0.5rem 0;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
   section#stories div.cards-list div.cards blockquote a {
     text-align: center;
