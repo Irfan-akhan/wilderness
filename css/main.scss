@@ -211,7 +211,7 @@ section#about {
     }
 
     & div#square-shapes {
-        margin-left: 4rem;
+        margin-left: 2rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -347,7 +347,7 @@ section#journel {
         }
     }
     & blockquote {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         font-weight: 100;
         text-align: start;
         padding-left: 2rem;
@@ -737,6 +737,35 @@ footer#end {
 // MEDIA QUERIES
 @media only screen and (max-width: 1023px) {
     /* For big tablets */
+    section#trending {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        & blockquote {
+            position: static;
+            width: 100%;
+            margin-bottom: 2rem;
+            text-align: center;
+            & span {
+                color: black;
+                font-size: 1.9rem;
+            }
+            & footer {
+                & cite {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        div#trending-gallery {
+            position: static;
+            margin: 0 auto;
+            width: 90%;
+            & a {
+                margin-top: 2rem;
+                font-size: 2rem;
+            }
+        }
+    }
     section#gallery {
         & h2.heading {
             text-align: center;
@@ -765,7 +794,9 @@ footer#end {
                 font-size: 2rem;
                 margin-bottom: 2rem;
             }
-
+            & p {
+                font-size: 1rem;
+            }
             & footer {
                 display: flex;
                 justify-content: center;
@@ -828,56 +859,33 @@ footer#end {
         }
     }
     section#trending {
+        // position: static;
         display: flex;
         flex-direction: column;
-        color: $color-secondary;
-        margin: 5rem auto;
-        blockquote {
+        position: relative;
+        & blockquote {
             position: absolute;
-            top: 0%;
-            left: 0%;
-            width: 100vw;
-            font-size: 1.3rem;
-            color: $color-lightblue;
-
+            top: -20%;
+            width: 100%;
+            margin-bottom: 2rem;
+            text-align: center;
             & span {
-                font-size: 700;
-                text-transform: capitalize;
-                font-size: 2rem;
+                color: black;
+                font-size: 1.9rem;
+            }
+            & footer {
+                & cite {
+                    font-size: 1.5rem;
+                }
             }
         }
         div#trending-gallery {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             position: static;
-            top: 0%;
-            left: 0%;
-            & img {
-                display: block;
-                box-shadow: 0px 10px 10px #dadada;
-                background-color: $white-color;
-                height: 250px;
-                width: 100%;
-                object-fit: cover;
-                padding: 15px;
-                transition: all 0.5s;
-                &:last-of-type {
-                    display: none;
-                }
-                &:hover {
-                    transform: scale(1.1);
-                }
-            }
+            margin: 3rem auto;
+            width: 100%;
             & a {
-                text-align: end;
-                color: $color-lightblue;
+                margin-top: 2rem;
                 font-size: 2rem;
-
-                & span {
-                    font-size: 2rem;
-                }
             }
         }
     }
@@ -952,13 +960,16 @@ footer#end {
         }
         & blockquote {
             width: 80%;
-            font-size: 1.8rem;
+            font-size: 1.3rem;
             padding: 0rem;
             text-align: center;
             & h3 {
                 color: $color-lightblue;
                 font-size: 2.2rem;
                 margin-top: 2rem;
+            }
+            & p {
+                font-size: 1.6rem;
             }
 
             & footer {

@@ -266,7 +266,7 @@ section#about div#text-content a span {
 }
 
 section#about div#square-shapes {
-  margin-left: 4rem;
+  margin-left: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,7 +435,7 @@ section#journel h2::after {
 }
 
 section#journel blockquote {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 100;
   text-align: start;
   padding-left: 2rem;
@@ -949,6 +949,38 @@ footer#end #social_links img:hover {
 
 @media only screen and (max-width: 1023px) {
   /* For big tablets */
+  section#trending {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#trending blockquote {
+    position: static;
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  section#trending blockquote span {
+    color: black;
+    font-size: 1.9rem;
+  }
+  section#trending blockquote footer cite {
+    font-size: 1.5rem;
+  }
+  section#trending div#trending-gallery {
+    position: static;
+    margin: 0 auto;
+    width: 90%;
+  }
+  section#trending div#trending-gallery a {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
   section#gallery h2.heading {
     text-align: center;
   }
@@ -975,6 +1007,9 @@ footer#end #social_links img:hover {
     color: #86ceeb;
     font-size: 2rem;
     margin-bottom: 2rem;
+  }
+  section#journel blockquote p {
+    font-size: 1rem;
   }
   section#journel blockquote footer {
     display: -webkit-box;
@@ -1055,66 +1090,29 @@ footer#end #social_links img:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    color: #4b4b4b;
-    margin: 5rem auto;
+    position: relative;
   }
   section#trending blockquote {
     position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100vw;
-    font-size: 1.3rem;
-    color: #86ceeb;
+    top: -20%;
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
   }
   section#trending blockquote span {
-    font-size: 700;
-    text-transform: capitalize;
-    font-size: 2rem;
+    color: black;
+    font-size: 1.9rem;
+  }
+  section#trending blockquote footer cite {
+    font-size: 1.5rem;
   }
   section#trending div#trending-gallery {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     position: static;
-    top: 0%;
-    left: 0%;
-  }
-  section#trending div#trending-gallery img {
-    display: block;
-    -webkit-box-shadow: 0px 10px 10px #dadada;
-            box-shadow: 0px 10px 10px #dadada;
-    background-color: #ffffff;
-    height: 250px;
+    margin: 3rem auto;
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    padding: 15px;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  section#trending div#trending-gallery img:last-of-type {
-    display: none;
-  }
-  section#trending div#trending-gallery img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   section#trending div#trending-gallery a {
-    text-align: end;
-    color: #86ceeb;
-    font-size: 2rem;
-  }
-  section#trending div#trending-gallery a span {
+    margin-top: 2rem;
     font-size: 2rem;
   }
   section#about {
@@ -1195,7 +1193,7 @@ footer#end #social_links img:hover {
   }
   section#journel blockquote {
     width: 80%;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     padding: 0rem;
     text-align: center;
   }
@@ -1203,6 +1201,9 @@ footer#end #social_links img:hover {
     color: #86ceeb;
     font-size: 2.2rem;
     margin-top: 2rem;
+  }
+  section#journel blockquote p {
+    font-size: 1.6rem;
   }
   section#journel blockquote footer {
     display: -webkit-box;
