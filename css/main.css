@@ -245,11 +245,21 @@ section#about {
   margin: 0 auto;
   font-size: 1.5rem;
   font-weight: 300;
+  padding-top: 1rem;
   color: #4b4b4b;
 }
 
 section#about div#text-content {
   width: 70%;
+}
+
+section#about div#text-content h2::before {
+  content: '';
+  display: inline-block;
+  width: 80vw;
+  height: 4px;
+  background-color: gray;
+  border-radius: 10px;
 }
 
 section#about div#text-content h3 {
@@ -300,6 +310,15 @@ section#about div#square-shapes p:last-of-type {
   position: absolute;
   top: 150px;
   left: 140px;
+}
+
+section#gallery h2.heading::before {
+  content: '';
+  display: block;
+  width: 80vw;
+  height: 4px;
+  background-color: gray;
+  border-radius: 10px;
 }
 
 section#gallery a {
@@ -421,7 +440,7 @@ section#journel span#number {
 
 section#journel h2 {
   text-transform: uppercase;
-  font-size: 3.3rem;
+  font-size: 3rem;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: c;
@@ -444,7 +463,7 @@ section#journel h2::after {
 }
 
 section#journel blockquote {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 100;
   text-align: start;
   padding-left: 2rem;
@@ -458,6 +477,7 @@ section#journel blockquote {
 
 section#journel blockquote h3 {
   color: #86ceeb;
+  font-size: 1.6rem;
 }
 
 section#journel blockquote:first-of-type {
@@ -1015,7 +1035,6 @@ footer#end #social_links img:hover {
   section#journel blockquote h3 {
     color: #86ceeb;
     font-size: 2rem;
-    margin-bottom: 2rem;
   }
   section#journel blockquote p {
     font-size: 1rem;
@@ -1076,7 +1095,7 @@ footer#end #social_links img:hover {
     top: 0;
   }
   header nav #logo {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
   header ul {
     display: none;
@@ -1085,11 +1104,11 @@ footer#end #social_links img:hover {
     top: 45%;
   }
   header div.main-heading h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
   }
   header div.main-heading a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   section#trending {
     display: -webkit-box;
@@ -1109,61 +1128,73 @@ footer#end #social_links img:hover {
     text-align: center;
   }
   section#trending blockquote h1.heading {
-    font-size: 3em;
+    font-size: 2.3em;
   }
   section#trending blockquote span {
     color: #86ceeb;
-    font-size: 1.9rem;
+    font-size: 1.4rem;
     font-weight: 900;
   }
   section#trending blockquote footer {
     padding: 0;
+    margin-bottom: 2rem;
   }
   section#trending blockquote footer cite {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   section#trending div#trending-gallery {
     margin: 3rem auto;
   }
+  section#trending div#trending-gallery a {
+    margin-top: 0;
+    font-size: 1.3rem;
+  }
   section#about {
-    font-size: 2rem;
-    font-weight: 300;
     color: #4b4b4b;
   }
   section#about div#text-content {
     width: 100%;
   }
   section#about div#text-content h2.heading {
+    text-align: center;
     margin-bottom: 2rem;
-    font-size: 4.5rem;
+    font-size: 3rem;
+  }
+  section#about div#text-content p {
+    font-size: 1.2rem;
   }
   section#about div#text-content a {
     text-align: start;
     padding: 2rem 0;
-    font-size: 2.1rem;
+    font-size: 1.4rem;
   }
   section#about div#text-content a span {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   section#about div#square-shapes {
     display: none;
   }
   section#gallery {
+    text-align: center;
     padding: 2rem;
+    margin: 0 auto;
   }
   section#gallery h2.heading {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
   }
   section#gallery div#cards {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
     text-align: center;
   }
   section#gallery div#cards div {
     margin-top: 2rem;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   section#gallery div#cards div:last-of-type {
     -webkit-box-shadow: none;
@@ -1171,7 +1202,8 @@ footer#end #social_links img:hover {
   }
   section#gallery a {
     text-align: center;
-    font-size: 2.4rem;
+    margin-top: 0;
+    font-size: 1.5rem;
     padding: 2rem;
   }
   section#journel {
@@ -1258,7 +1290,10 @@ footer#end #social_links img:hover {
     margin-top: 3rem;
   }
   section#stories div#info blockquote p {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+  }
+  section#stories div#info blockquote footer cite {
+    font-size: 0.9rem;
   }
   section#stories div.background:first-of-type {
     height: 20vh;
@@ -1275,10 +1310,10 @@ footer#end #social_links img:hover {
     height: 30vh;
   }
   section#stories div.background:last-of-type h2 span {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   section#stories div.background:last-of-type a {
-    font-size: 1.1rem;
+    font-size: 0.6rem;
   }
   section#contact {
     display: -webkit-box;
@@ -1291,25 +1326,25 @@ footer#end #social_links img:hover {
   }
   section#contact h2.heading {
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.4rem;
   }
   section#contact div.shape {
     display: none;
   }
   section#contact div.info h2 {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
   section#contact div.info h3 {
-    font-size: 1.9rem;
+    font-size: 1.4rem;
   }
   section#contact div.info h5 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
   section#contact div.info h4 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   section#contact div.img-bg {
-    height: 450px;
+    height: 350px;
     background-size: cover;
   }
   section#contact form {
@@ -1330,16 +1365,17 @@ footer#end #social_links img:hover {
   section#contact form input,
   section#contact form textarea,
   section#contact form button {
-    width: 100%;
-    padding: 2rem;
+    width: 60%;
+    padding: 1rem;
     margin-bottom: 2rem;
-    font-size: 1.8rem;
+    font-size: 1rem;
     text-align: center;
   }
   section#contact form button {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
   footer#end {
+    text-align: center;
     display: -ms-grid;
     display: grid;
     height: 80%;
@@ -1351,11 +1387,25 @@ footer#end #social_links img:hover {
     -webkit-column-gap: 20px;
             column-gap: 20px;
   }
+  footer#end div#social_links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   footer#end #brand {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  footer#end p {
+    text-align: start;
+    text-align: center;
   }
   footer#end a {
-    font-size: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
   }
   footer#end a:hover {
     color: #86ceeb;

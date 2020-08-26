@@ -191,9 +191,20 @@ section#about {
     margin: 0 auto;
     font-size: 1.5rem;
     font-weight: 300;
+    padding-top: 1rem;
     color: $color-secondary;
     & div#text-content {
         width: 70%;
+        & h2 {
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 80vw;
+                height: 4px;
+                background-color: gray;
+                border-radius: 10px;
+            }
+        }
         & h3 {
             font-weight: 100;
         }
@@ -235,6 +246,16 @@ section#about {
 
 // SECTION GALLERY
 section#gallery {
+    & h2.heading {
+        &::before {
+            content: '';
+            display: block;
+            width: 80vw;
+            height: 4px;
+            background-color: gray;
+            border-radius: 10px;
+        }
+    }
     & a {
         color: $color-lightblue;
         margin-top: 2rem;
@@ -331,7 +352,7 @@ section#journel {
 
     & h2 {
         text-transform: uppercase;
-        font-size: 3.3rem;
+        font-size: 3rem;
         grid-area: c;
 
         & span {
@@ -350,7 +371,7 @@ section#journel {
         }
     }
     & blockquote {
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: 100;
         text-align: start;
         padding-left: 2rem;
@@ -360,6 +381,7 @@ section#journel {
         width: 100%;
         & h3 {
             color: $color-lightblue;
+            font-size: 1.6rem;
         }
         &:first-of-type {
             grid-area: d;
@@ -795,7 +817,6 @@ footer#end {
             & h3 {
                 color: $color-lightblue;
                 font-size: 2rem;
-                margin-bottom: 2rem;
             }
             & p {
                 font-size: 1rem;
@@ -844,7 +865,7 @@ footer#end {
             position: absolute;
             top: 0;
             #logo {
-                font-size: 1.7rem;
+                font-size: 1.3rem;
             }
         }
         & ul {
@@ -853,11 +874,11 @@ footer#end {
         & div.main-heading {
             top: 45%;
             & h1 {
-                font-size: 3rem;
+                font-size: 2rem;
                 font-weight: 300;
             }
             & a {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
         }
     }
@@ -867,7 +888,7 @@ footer#end {
         position: relative;
         & blockquote {
             & h1.heading {
-                font-size: 3em;
+                font-size: 2.3em;
             }
             position: absolute;
             top: -20%;
@@ -876,39 +897,45 @@ footer#end {
             text-align: center;
             & span {
                 color: $color-lightblue;
-                font-size: 1.9rem;
+                font-size: 1.4rem;
                 font-weight: 900;
             }
             & footer {
                 padding: 0;
+                margin-bottom: 2rem;
 
                 & cite {
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                 }
             }
         }
         div#trending-gallery {
             margin: 3rem auto;
+            & a {
+                margin-top: 0;
+                font-size: 1.3rem;
+            }
         }
     }
 
     section#about {
-        font-size: 2rem;
-        font-weight: 300;
         color: $color-secondary;
         & div#text-content {
             width: 100%;
             & h2.heading {
+                text-align: center;
                 margin-bottom: 2rem;
-                font-size: 4.5rem;
+                font-size: 3rem;
             }
-
+            & p {
+                font-size: 1.2rem;
+            }
             & a {
                 text-align: start;
                 padding: 2rem 0;
-                font-size: 2.1rem;
+                font-size: 1.4rem;
                 & span {
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                 }
             }
         }
@@ -919,19 +946,22 @@ footer#end {
     }
 
     section#gallery {
+        text-align: center;
         padding: 2rem;
-
+        margin: 0 auto;
         & h2.heading {
-            font-size: 4rem;
+            font-size: 3rem;
             text-align: center;
         }
         div#cards {
             display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 1rem;
             text-align: center;
             & div {
                 margin-top: 2rem;
                 width: 100%;
-                font-size: 2rem;
+                font-size: 1.2rem;
                 &:last-of-type {
                     box-shadow: none;
                 }
@@ -939,7 +969,8 @@ footer#end {
         }
         & a {
             text-align: center;
-            font-size: 2.4rem;
+            margin-top: 0;
+            font-size: 1.5rem;
             padding: 2rem;
         }
     }
@@ -1007,7 +1038,12 @@ footer#end {
                     margin-top: 3rem;
                 }
                 & p {
-                    font-size: 1.5rem;
+                    font-size: 1.1rem;
+                }
+                & footer {
+                    & cite {
+                        font-size: 0.9rem;
+                    }
                 }
             }
         }
@@ -1023,11 +1059,11 @@ footer#end {
                 height: 30vh;
                 & h2 {
                     & span {
-                        font-size: 3rem;
+                        font-size: 2rem;
                     }
                 }
                 & a {
-                    font-size: 1.1rem;
+                    font-size: 0.6rem;
                 }
             }
         }
@@ -1039,28 +1075,28 @@ footer#end {
         flex-direction: column;
         & h2.heading {
             text-align: center;
-            font-size: 4rem;
+            font-size: 2.4rem;
         }
         & div.shape {
             display: none;
         }
         & div.info {
             & h2 {
-                font-size: 2.8rem;
+                font-size: 2rem;
             }
             & h3 {
-                font-size: 1.9rem;
+                font-size: 1.4rem;
             }
 
             & h5 {
-                font-size: 1.8rem;
+                font-size: 1.2rem;
             }
             & h4 {
-                font-size: 1.6rem;
+                font-size: 1.3rem;
             }
         }
         & div.img-bg {
-            height: 450px;
+            height: 350px;
             background-size: cover;
         }
         & form {
@@ -1071,20 +1107,21 @@ footer#end {
             & input,
             textarea,
             button {
-                width: 100%;
-                padding: 2rem;
+                width: 60%;
+                padding: 1rem;
                 margin-bottom: 2rem;
-                font-size: 1.8rem;
+                font-size: 1rem;
                 text-align: center;
             }
             & button {
-                font-size: 1.6rem;
+                font-size: 1rem;
             }
         }
     }
 
     // FOOTER
     footer#end {
+        text-align: center;
         display: grid;
         height: 80%;
         grid-template-columns: 1fr 1fr;
@@ -1094,11 +1131,21 @@ footer#end {
             'c d'
             'b a';
         column-gap: 20px;
+        & div#social_links {
+            display: flex;
+            justify-content: center;
+        }
         & #brand {
-            font-size: 3rem;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        & p {
+            text-align: start;
+            text-align: center;
         }
         & a {
-            font-size: 2rem;
+            font-size: 1.2rem;
+            text-align: center;
             &:hover {
                 color: $color-lightblue;
             }
