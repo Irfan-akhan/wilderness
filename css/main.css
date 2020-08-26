@@ -1367,6 +1367,16 @@ footer#end #social_links img:hover {
   header nav#navbar a#logo {
     font-size: 1.3rem;
   }
+  header div.main-heading p {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  header div.main-heading h1 {
+    font-size: 2rem;
+  }
+  header div.main-heading a {
+    font-size: 1rem;
+  }
   section#about {
     padding: 2rem;
     text-align: center;
@@ -1377,6 +1387,9 @@ footer#end #social_links img:hover {
   section#about div#text-content a {
     text-align: center;
     font-size: 1.5rem;
+  }
+  section#about div#text-content h2.heading {
+    font-size: 3rem;
   }
   section#trending {
     overflow: scroll;
@@ -1409,12 +1422,15 @@ footer#end #social_links img:hover {
   section#trending div#trending-gallery img {
     height: 200px;
   }
+  section#trending div#trending-gallery a {
+    margin-top: 1rem;
+  }
   section#gallery {
     padding: 2rem;
     margin: 0 auto;
   }
   section#gallery h2.heading {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
   }
   section#gallery div#cards {
@@ -1457,9 +1473,10 @@ footer#end #social_links img:hover {
     display: block;
     margin: 0 auto;
     padding: 0;
+    padding-top: 1rem;
   }
   section#journel h1.heading {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     letter-spacing: 5px;
     margin-bottom: 1rem;
   }
@@ -1467,25 +1484,32 @@ footer#end #social_links img:hover {
     display: none;
   }
   section#journel h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-transform: capitalize;
-    padding: 1rem;
+    padding: 0rem;
   }
   section#journel blockquote {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 0rem;
     width: 80%;
-    display: inline-block;
+    margin: 0 auto;
+    display: block;
     height: initial;
   }
   section#journel blockquote h3 {
     color: #86ceeb;
     margin: 0;
-    font-size: 1.5rem;
+    padding-top: 0;
+    font-size: 1.2rem;
   }
   section#journel blockquote p {
     margin: 0;
     font-size: 1rem;
+    padding: 0;
+  }
+  section#journel blockquote footer img {
+    width: 50px;
+    height: 50px;
   }
   section#stories {
     width: 100vw;
@@ -1498,10 +1522,23 @@ footer#end #social_links img:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  section#stories div.background:last-of-type h2 {
+  section#stories div.background:last-of-type h2,
+  section#stories div.background:first-of-type h2 {
+    margin-top: 3rem;
     font-size: 1rem;
+    padding: 0;
   }
-  section#stories div.background:last-of-type a {
+  section#stories div.background:last-of-type h2 i,
+  section#stories div.background:first-of-type h2 i {
+    height: 50px;
+    width: 50px;
+  }
+  section#stories div.background:last-of-type h2 span,
+  section#stories div.background:first-of-type h2 span {
+    font-size: 2rem;
+  }
+  section#stories div.background:last-of-type a,
+  section#stories div.background:first-of-type a {
     font-size: 1rem;
     font-weight: 100;
     padding: 0.5rem 1rem;
@@ -1531,6 +1568,19 @@ footer#end #social_links img:hover {
   }
   section#stories div#info blockquote p {
     font-size: 1.2rem;
+    padding: 0.6rem;
+  }
+  section#stories div#info blockquote footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1rem;
   }
   section#stories div.cards-list h2 {
     letter-spacing: 5px;
@@ -1552,7 +1602,7 @@ footer#end #social_links img:hover {
     width: 80%;
     margin-bottom: 1rem;
     padding: 0.5rem 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   section#stories div.cards-list div.cards blockquote a {
     text-align: center;
@@ -1574,6 +1624,8 @@ footer#end #social_links img:hover {
   section#contact form textarea,
   section#contact form button {
     font-size: 1.5rem;
+    padding: 0.8rem;
+    font-size: 1.2em;
   }
   footer#end {
     display: -webkit-box;
@@ -1589,7 +1641,7 @@ footer#end #social_links img:hover {
     font-size: 2.6rem;
   }
   footer#end a {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     text-align: center;
   }
   footer#end a:hover {
