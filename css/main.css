@@ -254,11 +254,12 @@ section#about div#text-content {
 }
 
 section#about div#text-content h2::before {
+  margin-bottom: 6rem;
   content: '';
   display: inline-block;
-  width: 80vw;
+  width: 90vw;
   height: 4px;
-  background-color: gray;
+  background-color: #bebebe;
   border-radius: 10px;
 }
 
@@ -313,11 +314,12 @@ section#about div#square-shapes p:last-of-type {
 }
 
 section#gallery h2.heading::before {
+  margin-bottom: 6rem;
   content: '';
   display: block;
-  width: 80vw;
+  width: 90vw;
   height: 4px;
-  background-color: gray;
+  background-color: #bebebe;
   border-radius: 10px;
 }
 
