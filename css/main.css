@@ -33,6 +33,71 @@ section {
   text-shadow: 3px 2px 3px #000000;
 }
 
+.modal-img {
+  height: 600px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-animation: fill 1s ease-in-out;
+          animation: fill 1s ease-in-out;
+}
+
+@-webkit-keyframes fill {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fill {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+#modal {
+  display: none;
+  background-color: #d8d3d3;
+  height: 90vh;
+  width: 80vw;
+  text-align: center;
+  z-index: 101;
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  -webkit-animation: fill 1s ease-in-out;
+          animation: fill 1s ease-in-out;
+}
+
+#modal .modal-content {
+  padding: 3rem;
+}
+
+#modal span {
+  cursor: pointer;
+  position: absolute;
+  right: 3%;
+  top: 2%;
+  color: #fff;
+  font-size: 4rem;
+}
+
+#modal span:hover {
+  color: #646464;
+}
+
 header {
   background-image: url(../resources/images/mainbg.jpg);
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
@@ -986,6 +1051,13 @@ footer#end #social_links img:hover {
 
 @media only screen and (max-width: 1023px) {
   /* For big tablets */
+  .modal-img {
+    height: 330px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-animation: fill 1s ease-in-out;
+            animation: fill 1s ease-in-out;
+  }
   section#trending {
     position: static;
     display: -webkit-box;
@@ -1094,6 +1166,13 @@ footer#end #social_links img:hover {
 
 @media only screen and (max-width: 767px) {
   /* For small tablets */
+  .modal-img {
+    height: 350px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-animation: fill 1s ease-in-out;
+            animation: fill 1s ease-in-out;
+  }
   header {
     height: 100vh;
   }
@@ -1422,6 +1501,14 @@ footer#end #social_links img:hover {
 
 @media only screen and (max-width: 480px) {
   /* For mobile phones: */
+  .modal-img {
+    height: 300px;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-animation: fill 1s ease-in-out;
+            animation: fill 1s ease-in-out;
+  }
   header nav#navbar a#logo {
     font-size: 1.3rem;
   }

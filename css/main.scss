@@ -29,7 +29,53 @@ section {
     color: $color-lightblue;
     text-shadow: 3px 2px 3px #000000;
 }
+//MODAL
+.modal-img {
+    height: 600px;
+    object-fit: contain;
+    animation: fill 1s ease-in-out;
+}
 
+@keyframes fill {
+    0% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#modal {
+    display: none;
+    background-color: #d8d3d3;
+    height: 90vh;
+    width: 80vw;
+    text-align: center;
+    z-index: 101;
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    // transform: translateX(-50%);
+    animation: fill 1s ease-in-out;
+
+    & .modal-content {
+        padding: 3rem;
+    }
+    & span {
+        cursor: pointer;
+        position: absolute;
+        right: 3%;
+        top: 2%;
+        color: #fff;
+        font-size: 4rem;
+        &:hover {
+            color: #646464;
+        }
+    }
+}
 // HEADER
 header {
     background-image: url(../resources/images/mainbg.jpg);
@@ -769,6 +815,11 @@ footer#end {
 // MEDIA QUERIES
 @media only screen and (max-width: 1023px) {
     /* For big tablets */
+    .modal-img {
+        height: 330px;
+        object-fit: contain;
+        animation: fill 1s ease-in-out;
+    }
     section#trending {
         position: static;
         display: flex;
@@ -865,6 +916,11 @@ footer#end {
 }
 @media only screen and (max-width: 767px) {
     /* For small tablets */
+    .modal-img {
+        height: 350px;
+        object-fit: contain;
+        animation: fill 1s ease-in-out;
+    }
     header {
         height: 100vh;
         nav {
@@ -1162,6 +1218,12 @@ footer#end {
 
 @media only screen and (max-width: 480px) {
     /* For mobile phones: */
+    .modal-img {
+        height: 300px;
+        width: 100%;
+        object-fit: contain;
+        animation: fill 1s ease-in-out;
+    }
     header {
         & nav#navbar {
             & a#logo {
