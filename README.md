@@ -1,5 +1,9 @@
 # Wilderness community of photographers 
 Wilderness is a landing page for a fictional photo community and marketplace for discovering and sharing inspiring photography. 
+### [Live Site](https://realtime-chat-application.netlify.com)
+
+![Chat Application](https://freeimage.host/i/2qXEVj)
+
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
